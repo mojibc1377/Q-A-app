@@ -24,6 +24,7 @@ const QuestionCard = ({ question, answer, level, onShowNextQuestion }) => {
         <button className="reveal-button" onClick={revealAnswer}>
           Reveal Answer
         </button>
+          <br/>
         <button className="next-button" onClick={moveToNextQuestion}>
           Next Question
         </button>
