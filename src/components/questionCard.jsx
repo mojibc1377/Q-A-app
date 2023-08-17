@@ -13,10 +13,10 @@ const QuestionCard = ({ question, answer, level, onShowNextQuestion }) => {
   };
 
   return (
-    <div className="question-card">
+    <div className="question-card fade-out">
         <br/>
       <br/>
-      <p>{question}</p>
+      <p className='fade-out'>{question}</p>
       <h6>Difficulty: {level}</h6>
     
       {!showAnswer && (
@@ -24,7 +24,7 @@ const QuestionCard = ({ question, answer, level, onShowNextQuestion }) => {
         <button className="reveal-button" onClick={revealAnswer}>
           Reveal Answer
         </button>
-          <br/>
+        <br/>
         <button className="next-button" onClick={moveToNextQuestion}>
           Next Question
         </button>
