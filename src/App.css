@@ -36,13 +36,11 @@ h6{
   border-radius: 4px;
   font-size: 16px;
   margin-top: 10px;
-  margin-right: 10px;
 }
 
 /* Styling for the next question button */
 .question-card button.next-button {
   background-color: #28a745;
-  margin-left: 10px;
 }
 
 /* Styling for the congratulatory message */
