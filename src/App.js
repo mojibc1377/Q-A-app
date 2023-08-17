@@ -354,13 +354,15 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Question and Answer App</h1>
-      <QuestionCard
-        question={questions[currentQuestionIndex].question}
-        answer={questions[currentQuestionIndex].answer}
-        level={questions[currentQuestionIndex].level}
-        onShowNextQuestion={showNextQuestion}
-      />
+      <h1>Q/A App</h1>
+      {currentQuestionIndex < questions.length && (
+        <QuestionCard
+          question={questions[currentQuestionIndex].question}
+          answer={questions[currentQuestionIndex].answer}
+          level={questions[currentQuestionIndex].level}
+          onShowNextQuestion={showNextQuestion}
+        />
+      )}
       {currentQuestionIndex === questions.length && (
         <p>Congratulations! You have completed all questions.</p>
       )}
